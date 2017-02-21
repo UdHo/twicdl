@@ -39,10 +39,7 @@ def getUrlSize(url):
 twic = "http://theweekinchess.com/twic"
 # Checks existing zips for same file size with server
 # Quite a slow down (with my connection)
-if 'check' in sys.argv:
-  check = True
-else:
-  check = False
+check = 'check' in sys.argv
 
 twicindex = str(readUrl(twic))
 # Filters all zip files of the pgn.
